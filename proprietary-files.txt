@@ -191,6 +191,17 @@ etc/customization/modem/amss_fsg_lilac_vodafone_uk_tar.mbn
 etc/customization/modem/amss_fsg_lilac_vodafone_uk_volte_vowifi_tar.mbn
 etc/customization/modem/amss_fsg_lilac_wind_canada_tar.mbn
 
+# NFC
+app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED
+app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk;PRESIGNED
+app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk;PRESIGNED
+app/MobileFeliCaWebPlugin/MobileFeliCaWebPlugin.apk;PRESIGNED
+app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk;PRESIGNED
+etc/felica/common.cfg
+etc/felica/mfm.cfg
+etc/felica/mfs.cfg
+etc/libnfc-nci.conf
+
 # SENSORS
 lib/libqmi_cci_system.so
 lib64/libqmi_cci_system.so

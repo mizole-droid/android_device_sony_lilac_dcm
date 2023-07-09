@@ -15,9 +15,9 @@
 
 ### INHERIT FROM YOSHINO-COMMON
 include device/sony/yoshino-common/BoardConfigPlatform.mk
-include vendor/sony/lilac/BoardConfigVendor.mk
+include vendor/sony/lilac_dcm/BoardConfigVendor.mk
 
-DEVICE_PATH := device/sony/lilac
+DEVICE_PATH := device/sony/lilac_dcm
 
 PRODUCT_PLATFORM := yoshino
 
@@ -25,9 +25,9 @@ PRODUCT_PLATFORM := yoshino
 TARGET_BOOTLOADER_BOARD_NAME := G8441
 
 ### KERNEL
-TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-lilac_defconfig
+TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-lilac_dcm_defconfig
 
-BOARD_KERNEL_CMDLINE += androidboot.hardware=lilac
+BOARD_KERNEL_CMDLINE += androidboot.hardware=lilac_dcm
 
 ### PARTITIONS
 # See also /proc/partitions on the device
@@ -37,6 +37,9 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
 
 ### DISPLAY
 TARGET_SCREEN_DENSITY := 300
+
+### SEPOLICY
+BOARD_VENDOR_SEPOLICY_DIRS += device/sony/lilac_dcm/sepolicy/vendor
 
 ### PROPS
 # Add device-specific ones

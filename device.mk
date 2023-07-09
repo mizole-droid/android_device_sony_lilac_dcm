@@ -1,7 +1,7 @@
 ### PLATFORM
 $(call inherit-product, device/sony/yoshino-common/platform.mk)
 ### PROPRIETARY VENDOR FILES
-$(call inherit-product, vendor/sony/lilac/lilac-vendor.mk)
+$(call inherit-product, vendor/sony/lilac_dcm/lilac_dcm-vendor.mk)
 
 ifeq ($(WITH_FDROID),true)
 $(call inherit-product, vendor/fdroid/fdroid-vendor.mk)
@@ -10,7 +10,7 @@ ifeq ($(WITH_MICROG),true)
 $(call inherit-product, vendor/microg/microg-vendor.mk)
 endif
 
-DEVICE_PATH := device/sony/lilac
+DEVICE_PATH := device/sony/lilac_dcm
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
