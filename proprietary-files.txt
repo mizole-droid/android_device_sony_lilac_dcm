@@ -191,12 +191,24 @@ etc/customization/modem/amss_fsg_lilac_vodafone_uk_tar.mbn
 etc/customization/modem/amss_fsg_lilac_vodafone_uk_volte_vowifi_tar.mbn
 etc/customization/modem/amss_fsg_lilac_wind_canada_tar.mbn
 
+# NFC
+etc/felica/common.cfg
+etc/felica/mfm.cfg
+etc/felica/mfs.cfg
+etc/libnfc-nci.conf
+
 # SENSORS
 lib/libqmi_cci_system.so
 lib64/libqmi_cci_system.so
 lib64/libsensor1.so
 lib64/libsensor_reg.so
 lib64/libsensor_test.so
+
+# NFC
+etc/libnfc-nci.conf
+etc/felica/common.cfg
+etc/felica/mfm.cfg
+etc/felica/mfs.cfg
 
 # TOUCH
 somc/touch/images/big_touch.png:vendor/sony/touch/images/big_touch.png
