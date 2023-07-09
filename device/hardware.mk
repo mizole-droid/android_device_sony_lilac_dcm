@@ -14,4 +14,7 @@
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.1-service
+    android.hardware.nfc@1.1.vendor
+
+PRODUCT_COPY_FILES += \
+       $(DEVICE_PATH)/config/init.lilac_dcm.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.lilac_dcm.nfc.rc

@@ -9,7 +9,7 @@
 
 set -e
 
-DEVICE=lilac
+DEVICE=lilac_dcm
 VENDOR=sony
 
 # Load extract_utils and do some sanity checks
