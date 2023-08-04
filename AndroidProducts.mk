@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lilac_dcm.mk
+    $(LOCAL_DIR)/evolution_lilac_dcm.mk

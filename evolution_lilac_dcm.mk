@@ -16,10 +16,13 @@ TARGET_SCREEN_WIDTH := 720
 TARGET_BOOTANIMATION_HALF_RES := true
 
 ### LINEAGE
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+EVO_BUILD_TYPE := UNOFFICIAL
+TARGET_USES_AOSP_RECOVERY := true
+TARGET_BOOT_ANIMATION_RES := 1440
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_lilac_dcm
+PRODUCT_NAME := evolutione_lilac_dcm
 PRODUCT_DEVICE := lilac_dcm
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := G8441
