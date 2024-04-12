@@ -348,13 +348,13 @@ vendor/lib64/libvpplibrary.so
 
 # NFC
 vendor/bin/hw/android.hardware.nfc@1.1-service.cxd22xx
-vendor/etc/libnfc-cxd22xx.conf
+vendor/etc/init/android.hardware.nfc@1.1-service.cxd22xx.rc
 vendor/etc/libnfc-cxd-224x02010010.conf
 vendor/etc/libnfc-cxd-224x02310011.conf
+vendor/etc/libnfc-cxd22xx.conf
 vendor/etc/nfc_settings.conf
-vendor/etc/init/android.hardware.nfc@1.1-service.cxd22xx.rc
-vendor/firmware/cxd224x_firmware_ES1.1.bin
 vendor/firmware/cxd224x_firmware_ES1.0.bin
+vendor/firmware/cxd224x_firmware_ES1.1.bin
 
 # QMI
 vendor/bin/mlog_qmi_service
