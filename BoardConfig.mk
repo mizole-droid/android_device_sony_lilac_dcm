@@ -25,8 +25,11 @@ PRODUCT_PLATFORM := yoshino
 TARGET_BOOTLOADER_BOARD_NAME := G8441
 
 ### KERNEL
-TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-lilac_dcm_defconfig
-
+ifeq ($(DOCKER),1)
+	TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-lilac_dcm_docker_defconfig
+else
+	TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-lilac_dcm_defconfig
+endif
 BOARD_KERNEL_CMDLINE += androidboot.hardware=lilac_dcm
 
 ### PARTITIONS
