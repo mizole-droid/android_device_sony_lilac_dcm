@@ -1,6 +1,5 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/sony/lilac_dcm/device.mk)
@@ -9,10 +8,8 @@ $(call inherit-product, device/sony/lilac_dcm/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 ### BOOTANIMATION
-# vendor/lineage/config/common_full_phone.mk
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
-# vendor/lineage/config/common.mk
 TARGET_BOOTANIMATION_HALF_RES := true
 
 ### LINEAGE
@@ -26,7 +23,5 @@ PRODUCT_MODEL := SO-02K
 PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=lilac_dcm \
-    PRIVATE_BUILD_DESC="SO-02K-user 9 47.2.B.5.38 4216219063 release-keys"
-
-BUILD_FINGERPRINT := docomo/SO-02K/SO-02K:9/47.2.B.5.38/4216219063:user/release-keys
+    BuildDesc="SO-02K-user 9 47.2.B.5.38 4216219063 release-keys" \
+    BuildFingerprint=docomo/SO-02K/SO-02K:9/47.2.B.5.38/4216219063:user/release-keys
